@@ -10,6 +10,7 @@
 #header{
     background: #E03137;
     color:white;
+    padding:10px;
     margin:0px;
     height: 90px;
     line-height: 90px;
@@ -22,8 +23,10 @@
     font-size: 30px;
 }
 
-#main{
-    padding: 15px;
+#main .jumbotron{
+    padding:50px;
+    margin-top:30px;
+    border-radius: 5px;
 }
 
 #nav{
@@ -58,7 +61,7 @@
 }
 
 #footer{
-    margin-top:50px;
+    margin-top:30px;
     padding-top:15px;
     border-top:1px solid #eee;
     color:gray;
