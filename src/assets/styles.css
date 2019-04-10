@@ -29,6 +29,10 @@
     border-radius: 5px;
 }
 
+#main .jumbotron a{
+    margin-right: 10px;
+}
+
 #nav{
     padding:0px;
     margin:0xp;
