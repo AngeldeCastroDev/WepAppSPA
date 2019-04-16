@@ -20,5 +20,13 @@ export class ProductoService{
         return this._http.get(this.url+'productos');
 
     }
+
+    addProducto(producto:Producto){
+        let json = JSON.stringify(producto);
+        console.log(json);
+        let params = 'json='+json;
+        let headers = new HttpHeaders({'Content-Type':'application/x-www-form-urlencoded'});
+        return this._http.post(this.url+'productos', params,{headers});
+    }
     
 }
