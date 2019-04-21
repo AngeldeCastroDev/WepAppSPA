@@ -4,8 +4,8 @@
         <h3>{{titulo}}</h3>
         <p>La página que intentas cargar no existe, prueba con estos botones:</p>
         <p>
-            <a href="#" class="btn btn-lg btn-primary">Ver productos</a>
-            <a href="#" class="btn btn-lg btn-success">Añadir productos</a>
+            <a [routerLink]="['/productos']" class="btn btn-lg btn-primary">Ver productos</a>
+            <a [routerLink]="['/crear-producto']" class="btn btn-lg btn-success">Añadir productos</a>
         </p>
     </div>
 
