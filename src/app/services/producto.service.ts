@@ -21,7 +21,7 @@ export class ProductoService{
 
     }
 
-    getProducto(id):Observable<any>{
+    getProducto(id:number):Observable<any>{
         return this._http.get(this.url+'producto/'+id);
         
     }
@@ -40,6 +40,11 @@ export class ProductoService{
         let headers = new HttpHeaders({'Content-Type':'application/x-www-form-urlencoded'});
         return this._http.post(this.url+'update-producto/'+id, params,{headers});
     }
+
+    deleteProducto(id:number){
+		return this._http.get(this.url+'delete-producto/'+id);
+						
+	}
 
     makeFileRequest(url:string, params: Array<string>, files: Array<File>){
         return new Promise((resolve, reject)=>{
